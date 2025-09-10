@@ -1,5 +1,4 @@
 export type ID = string;
-
 export type TodoStatus = 'open' | 'done';
 
 export interface Todo {
@@ -14,5 +13,5 @@ export function updateById<T extends { id: ID }>(
   id: ID,
   updater: (item: T) => T
 ): T[] {
-  return items.map((it) => (it.id === id ? updater(it) : it));
+  return items.map((it) => (it.id == id ? updater(it) : it));
 }

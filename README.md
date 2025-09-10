@@ -8,7 +8,7 @@ A tiny **TypeScript (vanilla)** demo that shows practical TS fundamentals withou
 - **Typed fetch** to a public API (PokeAPI)
 - Plain **DOM API** UI (no libraries)
 
-Live demo:  
+Live demo: https://ts-basics.vercel.app/
 Repo: https://github.com/blaszczakdev/ts-basics
 
 ---

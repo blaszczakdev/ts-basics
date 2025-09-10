@@ -7,16 +7,48 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node / builds
+node_modules/
+dist/
+dist-ssr/
 *.local
+*.tgz
 
-# Editor directories and files
+# TypeScript
+*.tsbuildinfo
+
+# Env (Vite/secret keys)
+.env
+.env.*.local
+.env.local
+
+# Coverage / test outputs
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+.vitest/
+
+# Lint caches
+.eslintcache
+.stylelintcache
+
+# Tooling caches
+.cache/
+.parcel-cache/
+.turbo/
+.pnpm-store/
+
+# Vercel / Netlify
+.vercel/
+.netlify/
+
+# Editors / OS
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
