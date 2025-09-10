@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Basics</title>
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        margin: 24px;
+        max-width: 760px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+        margin: 12px 0;
+      }
+      input,
+      button {
+        padding: 8px 10px;
+      }
+      ul {
+        padding-left: 18px;
+      }
+      code {
+        background: #111;
+        color: #0f0;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+      .muted {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TypeScript Basics – mini demo</h1>
+
+    <h3>1) TODO (typy, unie, narrowing, generyk)</h3>
+    <div class="row">
+      <input id="todo-input" placeholder="Nowe zadanie..." />
+      <button id="add-btn">Dodaj</button>
+    </div>
+    <ul id="todo-list"></ul>
+
+    <h3>2) Kalkulator (type guardy)</h3>
+    <div class="row">
+      <input id="a" placeholder="a" />
+      <input id="b" placeholder="b" />
+      <button id="sum-btn">Suma</button>
+      <span id="sum-out" class="muted"></span>
+    </div>
+
+    <h3>3) Mini API (typowana odpowiedź)</h3>
+    <div class="row">
+      <input id="poke" placeholder="np. pikachu" />
+      <button id="poke-btn">Pobierz</button>
+      <span id="poke-out" class="muted"></span>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
